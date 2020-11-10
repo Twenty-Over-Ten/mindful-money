@@ -1,0 +1,20 @@
+{
+  "name": "courses-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.pug",
+    "build": "yarn build:remove && parcel build *.pug --no-content-hash --no-minify --out-dir build",
+    "build:remove": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.29.0"
+  }
+}
