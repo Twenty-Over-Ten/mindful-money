@@ -13,6 +13,20 @@
   font-size: 0.9rem;
   letter-spacing: 2px;
 }
+.courses .subnav a:after {
+  content: "";
+  background: #3C4A51;
+  display: block;
+  margin: 0.25em auto 0;
+  width: 20px;
+  height: 1px;
+}
+.courses .subnav a:hover {
+  color: #ef9835;
+}
+.courses .subnav a:hover::after {
+  background: #ef9835;
+}
 .courses h3 {
   line-height: 1.25;
   margin: 10px 0 15px;
@@ -40,26 +54,38 @@
   margin-bottom: 2rem !important;
 }
 @media (min-width: 820px) {
-  .courses .planning .row:first-child div:first-child {
+  .courses .planning .row:first-child div:first-child,
+.courses .moneylive .row:first-child div:first-child {
     order: 2;
   }
 }
 @media (min-width: 820px) {
-  .courses .planning .row:first-child div:last-child {
+  .courses .planning .row:first-child div:last-child,
+.courses .moneylive .row:first-child div:last-child {
     order: 1;
   }
 }
-.courses .planning .row img {
+.courses .planning .row img,
+.courses .moneylive .row img {
   margin-bottom: 15px;
 }
 @media (min-width: 820px) {
-  .courses .planning .row img {
+  .courses .planning .row img,
+.courses .moneylive .row img {
     margin-bottom: 0;
   }
 }
 .courses .saving {
   position: relative;
-  padding: 100px 0;
+  padding: 10px 20px 40px;
+  text-align: center;
+  margin-top: 4rem;
+}
+@media (min-width: 820px) {
+  .courses .saving {
+    padding: 100px 10px;
+    margin-top: 6rem;
+  }
 }
 .courses .saving .bg {
   width: 100vw;
@@ -80,7 +106,10 @@
   margin-bottom: 50px;
 }
 .courses .quote {
-  padding: 100px 0;
+  text-align: center;
+  padding: 20rem 0 100px;
+  margin-top: -15rem;
+  margin-bottom: -4rem;
 }
 .courses .callout.lightgray h2, .courses .callout.lightgray p {
   color: #6a6a6a;
